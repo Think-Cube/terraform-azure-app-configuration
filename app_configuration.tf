@@ -8,4 +8,11 @@ resource "azurerm_app_configuration" "main" {
   purge_protection_enabled   = var.app_configuration_purge_protection_enabled
   soft_delete_retention_days = var.app_configuration_soft_delete_retention_days
   tags                       = var.default_tags
+
+  dynamic "identity" {
+    for_each = var.create_identity ? [1] : []
+    content {
+      type = var.identity_type
+    }
+  }  
 }
