@@ -1,5 +1,5 @@
 module "app_configuration" {
-  source = "github.com/Think-Cube/terraform-azure-app-configuration?ref=v1.0.0"
+  source = "../.."
 
   name                = "appconfig-dev-example"
   resource_group_name = "rg-example"
