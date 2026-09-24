@@ -1,4 +1,3 @@
-<!-- BEGIN_TF_DOCS -->
 # Example: Advanced — Azure App Configuration
 
 Provisions an Azure App Configuration store for centralized application settings. Full-featured example with optional configuration blocks enabled.
@@ -35,17 +34,3 @@ module "app_configuration" {
   }
 }
 ```
-
-## Requirements
-
-| Name | Version |
-|------|---------|
-| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.9.0 |
-| <a name="requirement_azurerm"></a> [azurerm](#requirement\_azurerm) | ~> 5.0 |
-
-## Modules
-
-| Name | Source | Version |
-|------|--------|---------|
-| <a name="module_app_configuration"></a> [app\_configuration](#module\_app\_configuration) | ../.. | n/a |
-<!-- END_TF_DOCS -->
